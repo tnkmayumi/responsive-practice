@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+.box-size{
+  height: 400px;
+  width: 400px;
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:960px) {
+  .box-size{
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.box-color{
+  height: 300px;
+  width: 300px;
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:960px) {
+  .box-color{
+    background: #007bff;
+  }
+}
+
+.boxs{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box-margin-b{
+  height: 300px;
+  width: 300px;
+  background: #0008ff;
+  margin-right:150px;
+}
+
+.box-margin-g{
+  height: 300px;
+  width: 300px;
+  background: #22ff00;
+}
+
+@media screen and (max-width:960px) {
+  .box-margin-b{
+    margin-right: 50px;
+  }
+}
+
+.floatcxl{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.item-r{
+  height: 300px;
+  width: 300px;
+  float: left;
+  background: #ff0000;
+}
+
+.item-b{
+  height: 300px;
+  width: 300px;
+  float: left;
+  background: #0008ff;
+}
+
+@media screen and (max-width:960px) {
+  .item-r, .item-b{
+    float: none;
+  }
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.flex-re{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 300px;
+}
+
+.abox{
+  height: 300px;
+  width: 300px;
+  background: #ff0000;
+}
+
+.bbox{
+  height: 300px;
+  width: 300px;
+  background: #0008ff;
+}
+
+.cbox{
+  height: 300px;
+  width: 300px;
+  background: #ff8400;
+}
+
+@media screen and (max-width:960px) {
+  .flex-re{
+    flex-direction: row-reverse;
+  }
+}
+
+.flex-kotei{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 300px;
+}
+
+.gbox{
+  height: 300px;
+  width: 300px;
+  background: #00ff51;
+}
+
+.ybox{
+  height: 300px;
+  width: 300px;
+  background: #d4ff00;
+}
+
+.pbox{
+  height: 300px;
+  width: 300px;
+  background: #ff00e1;
+}
+
+@media screen and (max-width:960px) {
+  .gbox{
+    order: 1;
+  }
+  .ybox{
+    order: 2;
+  }
+}
+
+.flex-hidden{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.r-item{
+  height: 300px;
+  width: 300px;
+  background: #ff0000;
+}
+
+.b-item{
+  height: 300px;
+  width: 300px;
+  background: #0008ff;
+  display: none;
+}
+
+.g-item{
+  height: 300px;
+  width: 300px;
+  background: #00ff51;
+}
+
+@media screen and (max-width:960px) {
+  .b-item{
+    display: block;
+  }
+  .r-item{
+    display: none;
+  }
+}
