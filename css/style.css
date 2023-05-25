@@ -88,6 +88,7 @@
   justify-content: center;
   text-align: center;
   line-height: 300px;
+  flex-direction: row;
 }
 
 .abox{
@@ -125,21 +126,27 @@
   height: 300px;
   width: 300px;
   background: #00ff51;
+  order: 0;
 }
 
 .ybox{
   height: 300px;
   width: 300px;
   background: #d4ff00;
+  order: 1;
 }
 
 .pbox{
   height: 300px;
   width: 300px;
   background: #ff00e1;
+  order: 2;
 }
 
 @media screen and (max-width:960px) {
+  .pbox{
+    order: 0;
+  }
   .gbox{
     order: 1;
   }
